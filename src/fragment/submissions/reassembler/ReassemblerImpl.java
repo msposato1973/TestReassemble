@@ -1,12 +1,9 @@
 package fragment.submissions.reassembler;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
- 
 
 import fragment.submissions.bean.ResultConcat;
 import fragment.submissions.bean.VariationOf2;
