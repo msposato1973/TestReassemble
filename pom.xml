@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>TestReassemble</groupId>
+  <artifactId>TestReassemble</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+	   <java.source.versione>1.7</java.source.versione>
+	   <java.target.versione>1.7</java.target.versione>
+	   <maven.versione>3.1</maven.versione>
+	   <common.versione>2.4</common.versione>
+	   <junit.versione>4.11</junit.versione>
+  </properties>
+  
+  <dependencies>
+   <!-- Test dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.versione}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${common.versione}</version>
+        </dependency>
+  </dependencies>
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>    
+        <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>${maven.versione}</version>
+              <configuration>
+                  <source>${java.source.versione}</source>
+                  <target>${java.target.versione}</target>
+              </configuration>
+          </plugin>
+      </plugins>
+    
+  </build>
+</project>
